@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masalah Variable Var</title>
+</head>
+<body>
+<script>
+
+    // global scope
+    let i = 20;
+
+    for (let i = 0; i < 10; i++){
+        // local scope
+        console.info(`Local ${i}`);
+    }
+
+    console.info(`Global ${i}`);
+    
+    /* Masalah kata kunci var terletak pada :
+    jika kita ingin membuat local scope baru, kalau menggunakan var
+    global scopenya akan ikut berubah, maka tidak disarankan menggunakan
+    kata kunci var lagi. Sedangkan kalau menggunakan kata kunci let tidak akan
+    mengubah varibel global.*/
+
+</script>
+</body>
+</html>
